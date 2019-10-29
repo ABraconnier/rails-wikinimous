@@ -1,0 +1,6 @@
+<div class="full-title">
+  <h1><%= @article.title %> <%= link_to " ", edit_article_path(@article), class: "far fa-edit icon" %> <%= link_to '', article_path(@article), {class: "far fa-trash-alt icon", method: :delete} %></h1>
+</div>
+<div class="content">
+<p> <%= @article.content %></p>
+</div>

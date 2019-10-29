@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-light bg-light sticky-top">
+      <span class="navbar-brand mb-0 h1"><%= link_to "My own article database", articles_path, class: "title" %></span>
+<%= link_to "Write a new article", new_article_path, class: "btn btn-primary" %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

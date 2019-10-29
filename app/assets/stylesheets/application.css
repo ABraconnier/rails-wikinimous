@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+ @import url("https://use.fontawesome.com/releases/v5.0.7/css/all.css")

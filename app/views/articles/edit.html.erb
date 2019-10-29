@@ -1,0 +1,8 @@
+<div class="form">
+<h2>Please edit here the article</h2>
+<%= simple_form_for(@article) do |f| %>
+  <%= f.input :title, error: 'Title is mandatory, please specify one', required: true%>
+  <%= f.input :content, error: 'Content is mandatory, please specify one', input_html: {rows: 30} %>
+  <%= f.button :submit, { class: 'btn btn-primary' } %>
+<% end %>
+</div>
